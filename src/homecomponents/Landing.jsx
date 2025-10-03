@@ -30,7 +30,7 @@ function Landing() {
 
       {/* 7 Images in curved layout with gradient background */}
       <div
-        className="self-stretch h-[350px] md:h-[450px] 2xl:h-[550px] relative mt-8"
+        className="self-stretch h-[350px] md:h-[450px] 2xl:h-[550px] relative mt-8 overflow-hidden"
         style={{
           background: `linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 30%, #FFFFFF 70%, #FFFFFF 100%)`,
         }}
