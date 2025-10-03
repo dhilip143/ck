@@ -1,6 +1,6 @@
 import Brands from "../homecomponents/Brand";
 import Form from "../homecomponents/form";
-import Grow from "../homecomponents/grow";
+import Grow from "/src/homecomponents/Grow.jsx";
 import Insidecavin from "../homecomponents/Insidecavin";
 import Purpose from "../homecomponents/purpose";
 import Small from "../homecomponents/small";
