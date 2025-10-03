@@ -1,8 +1,8 @@
 import React from 'react';
-// Make sure you have react-icons installed: npm install react-icons
-import { FaStar } from 'react-icons/fa';
 
-// This is a small helper component to avoid repeating code for each card.
+import { FaStar } from 'react-icons/fa';
+import lay from "/src/assets/home/Layer_1.png"
+
 const StatCard = ({ stat }) => (
   <div
     // The base styles for each card
@@ -77,7 +77,7 @@ function Years() {
       textClassName: "text-slate-800 text-3xl font-extrabold font-['Host_Grotesk'] leading-tight",
       children: (
         <div className="w-32 h-32 absolute top-0 right-0 opacity-80">
-          <img src="https://i.imgur.com/gY9n53H.png" alt="Leaf Icon" className="w-full h-full" />
+          <img src={lay} alt="Leaf Icon" className="w-full h-full" />
         </div>
       ),
     },

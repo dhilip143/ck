@@ -12,15 +12,18 @@ function Insidecavin() {
         style={{ backgroundImage: `url(${lay})` }}
       >
         {/* Heading */}
-        <div className="flex flex-col justify-start items-center gap-1">
-          <div className="text-center justify-start text-slate-800 text-8xl font-extrabold font-['Host_Grotesk'] leading-[116px]">
-            Inside CavinKare
-          </div>
-          <div className="text-center justify-start text-gray-500 text-2xl font-medium font-['Host_Grotesk'] leading-loose">
-            Stay updated with our latest news, innovations, and stories that
-            shape our journey
-          </div>
-        </div>
+       <div className="flex flex-col justify-start items-center gap-1">
+  {/* Gradient Heading */}
+  <h1 className="text-8xl font-extrabold font-['Host_Grotesk'] text-center leading-[116px] bg-gradient-to-r from-[#1a3038] via-[#1a3038] to-[#003da6] bg-clip-text text-transparent">
+    Inside CavinKare
+  </h1>
+
+  {/* Subheading */}
+  <p className="text-2xl font-medium font-['Host_Grotesk'] text-center text-gray-500 leading-loose">
+    Stay updated with our latest news, innovations, and stories that shape our journey
+  </p>
+</div>
+
 
         {/* Cards */}
         <div className="w-[1248px] inline-flex justify-start items-center gap-6 overflow-hidden">

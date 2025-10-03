@@ -76,47 +76,52 @@ function Small() {
   return (
     <div className="w-full bg-white">
       {/* Heading */}
-      <div className="w-full px-20 md:px-40 py-28 flex flex-col justify-start items-center gap-6">
-        <h2 className="text-center text-slate-800 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-          How One Small Sachet Sparked a Giant Revolution
-        </h2>
-        <p className="text-center text-gray-500 text-lg md:text-xl font-normal font-['Inter'] leading-loose max-w-3xl">
-          A story of bold thinking, inclusive innovation, and how a drop of
-          shampoo changed the Indian market forever.
-        </p>
-      </div>
+      <div className="w-full px-6 md:px-20 lg:px-40 xl:px-60 2xl:px-80 py-20 md:py-28 flex flex-col justify-start items-center gap-6">
+  {/* Gradient Heading */}
+  <h2 className="text-center text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-[100px] font-extrabold leading-tight font-['Inter'] 
+                 bg-gradient-to-r from-[#1a3038] via-[#1a3038] to-[#003da6] bg-clip-text text-transparent">
+    How One Small Sachet Sparked a Giant Revolution
+  </h2>
+
+  {/* Normal paragraph */}
+  <p className="text-center text-gray-500 text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal font-['Inter'] leading-relaxed max-w-3xl">
+    A story of bold thinking, inclusive innovation, and how a drop of
+    shampoo changed the Indian market forever.
+  </p>
+</div>
+
 
       {/* Horizontal Scroll Section */}
-      <div ref={sectionRef} className="relative w-full h-screen overflow-hidden">
-        <div ref={scrollRef} className="flex w-max h-full gap-20 px-10 md:px-20">
+      <div ref={sectionRef} className="relative w-full h-[85vh] md:h-screen overflow-hidden">
+        <div ref={scrollRef} className="flex w-max h-full gap-6 md:gap-10 lg:gap-16 xl:gap-20 px-4 md:px-10 lg:px-20">
           {timelineData.map((item, index) => (
             <div
               key={index}
-              className="w-[90vw] md:w-[518px] h-full flex-shrink-0 flex flex-col justify-center items-center gap-6"
+              className="w-[90vw] md:w-[480px] lg:w-[518px] xl:w-[550px] 2xl:w-[650px] h-full flex-shrink-0 flex flex-col justify-center items-center gap-4 md:gap-6"
             >
               {/* Year */}
-              <div className="text-slate-800 text-6xl font-bold font-['Host_Grotesk']">
+              <div className="text-slate-800 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-['Host_Grotesk']">
                 {item.year}
               </div>
 
               {/* Image */}
-              <div className="w-full h-[400px] rounded-2xl overflow-hidden">
+              <div className="w-full h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px] rounded-2xl overflow-hidden">
                 <img
                   src={chi}
                   alt={item.year}
-                  className="w-full h-full object-cover rounded-tr-[80px]"
+                  className="w-full h-full object-cover rounded-tr-[60px] md:rounded-tr-[80px]"
                 />
               </div>
 
               {/* Content */}
-              <div className="max-w-xl flex flex-col gap-4 text-center">
-                <div className="text-slate-800 text-2xl md:text-3xl font-semibold font-['Host_Grotesk'] leading-snug">
+              <div className="max-w-xl flex flex-col gap-2 md:gap-4 text-center">
+                <div className="text-slate-800 text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold font-['Host_Grotesk'] leading-snug">
                   {item.title}
                 </div>
-                <div className="text-slate-800/60 text-xl md:text-2xl font-normal font-['Host_Grotesk'] leading-loose">
+                <div className="text-slate-800/60 text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal font-['Host_Grotesk'] leading-relaxed">
                   {item.quote}
                 </div>
-                <div className="text-slate-800 text-xl md:text-2xl font-semibold font-['Host_Grotesk'] leading-loose">
+                <div className="text-slate-800 text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold font-['Host_Grotesk'] leading-relaxed">
                   {item.price}
                 </div>
               </div>
