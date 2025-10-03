@@ -1,9 +1,9 @@
 import Brands from "../homecomponents/Brand";
-import Form from "../homecomponents/form";
+import Form from "/src/homecomponents/Form.jsx";
 import Grow from "/src/homecomponents/Grow.jsx";
 import Insidecavin from "../homecomponents/Insidecavin";
 import Purpose from "../homecomponents/purpose";
-import Small from "../homecomponents/small";
+import Small from "src/homecomponents/small.jsx";
 
 import Landing from "/src/homecomponents/Landing.jsx";
 import Years from "/src/homecomponents/years.jsx"
